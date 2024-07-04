@@ -30,7 +30,8 @@ function passwordChecker (req, res, next){
           });
     }
     else{
-        res.send("Wrong password");
+        res.redirect("/");
+        
     }
     next();
   }
